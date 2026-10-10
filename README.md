@@ -1,52 +1,74 @@
-# 🦌 Bestand i bevegelse (v1.5)
+# README.md: Fjellvik – Landskapet svarer (Hjorteforvaltning 3.2)
 
-**Bestand i bevegelse** er en interaktiv, nettbasert læringssti og simulering designet for undervisning i bestandsdynamikk og hjorteviltforvaltning. 
+Animerings- og læringsspillet **Fjellvik – landskapet svarer** er et interaktivt, nettleserbasert simuleringsopplegg om viltforvaltning, bestandsdynamikk, usikre overvåkingsdata og interessekonflikter i norsk natur. 
 
-Gjennom læringsstien blir studentene guidet gjennom fiktive forvaltningsscenarier (som Fjellvik) for å bygge en praktisk forståelse av økologiske modeller, bæreevne, demografiske prosesser og kvotetildeling.
-
----
-
-## 🎯 Pedagogisk innhold
-
-Læringsstien er bygget opp av **7 stasjoner** som kombinerer teori, utforsking og oppgaver:
-
-- **14 kjerneoppgaver:** Inkluderer umiddelbar tilbakemelding og veiledende svarforslag.
-- **5 interaktive modellverksteder:** Utforskning av bestandsmodeller og høstingsscenarier.
-- **Integrert feltbok:** Automatisk lagring av studentens egne notater og svar underveis. Innholdet kan eksporteres etter endt økt.
-- **Sluttoppgave:** Oppsamling og syntese der studenten gir faglige råd for forvaltningen.
+Spillet er utviklet som en integrert læringsressurs hvor elevene/studentene inntar rollen som viltforvalter i det fiktive landskapet **Fjellvik**.
 
 ---
 
-## 🌐 Tilgang og bruk
+## 🎯 Pedagogisk formål og læringsmål
 
-### For studenter / undervisere
-Læringsstien kjører direkte i nettleseren og krever ingen innlogging eller installasjon:
+Hovedmålet med spillet er å gi innsikt i at naturforvaltning sjeldent handler om absolutte tall, men om å **tolke usikre indekser, avveie motstridende interesser og ta langsiktige beslutninger under usikkerhet**.
 
-👉 **[Klikk her for å åpne læringsstien](https://DITT-BRUKERNAVN.github.io/DITT-REPO-NAVN/)** *(Bytt ut med din GitHub Pages-lenke)*
-
-### For lokal kjøring
-Du kan også laste ned `index.html`-filen og åpne den direkte i en valgfri nettleser (Chrome, Safari, Edge, Firefox).
-
----
-
-## 🛠️ Teknisk arkitektur
-
-- **Self-contained HTML5:** Hele applikasjonen er samlet i én enkelt `index.html`-fil.
-- **Ingen eksterne avhengigheter:** JavaScript-logikk, CSS-styling og grafikk (SVG/Base64) er bakt direkte inn i kildekoden.
-- **Lokal datalagring:** Svar og progress lagres trygt i brukerens egen nettleser via `localStorage`.
-- **Innebygd sikkerhet:** Krever hverken backend-server eller database.
+Etter å ha gjennomført spillet skal deltakerne kunne:
+1. **Skille mellom observasjonsindeks og reell bestandsstørrelse** (f.eks. *Sett hjort per jegerdag* vs. faktisk antall individer).
+2. **Forstå hjortens arealbruk og sesongtrekk** mellom sommer- og vinterbeiter (Nordlia og Sørskogen) samt tiltak mot trafikkfare og forstyrrelser.
+3. **Ha innsikt i målkonflikter** mellom skogbruk (beiteskader på ungskog), jordbruk (avlingsskader) og jaktinteresser.
+4. **Utarbeide og revidere femårige bestandsplaner** med målrettet avskytingsstruktur (kalv, kolle, spissbukk og eldre bukk).
 
 ---
 
-## 📌 Status og videreutvikling
+## 🧭 Spillets oppbygning og oppdrag
 
-**Gjeldende versjon:** `v1.5 (Pilotversjon)`
+Spillet er strukturert rundt **fire kronologiske oppdrag** som bygger på hverandre:
 
-- ✅ **Status:** Funksjonelt komplett og klar til utprøving/pilotering i undervisning.
-- 🧪 **Testing:** Automatiserte logikk- og navigeringskontroller er gjennomført.
-- 🚧 **Neste steg:** Visuell kontroll i ulike nettlesere, WCAG 2.2-tilgjengelighetstesting og tilpasninger basert på tilbakemeldinger fra første studentgruppe.
+| Oppdrag | Tittel & Tema | Sentrale oppgaver og læringsmål |
+| :--- | :--- | :--- |
+| **1** | **Hvor stor er bestanden?**<br>*(Tolkning av overvåkingsdata)* | Analyse av historiske jaktlogger over 3 år. Skille observasjonsindeks (*sett hjort*) fra faktisk bestandsstørrelse. Plassering av feltbase og skriftlig begrunnelse for utgangspunktet. |
+| **2** | **Vinterbeite og sesongtrekk**<br>*(Arealbruk og tiltak)* | Analyse av GPS-data og trekkruter mellom Nordlia (sommer) og Sørskogen (vinter). Prioritering av 5 tiltakspoeng på tryggere veikryssing, vinterro og merkedata. |
+| **3** | **Hjort, skog og jordbruk**<br>*(Interessekonflikter)* | Avveining av skadekostnader og tiltak for å balansere hensynet til gårdbruker (avling), skogeier (furu/ungskog) og jakt/viltet. |
+| **4** | **Lag en bestandsplan**<br>*(Femårig forvaltning)* | Utarbeidelse av en 5-årig avskytingsplan. Simulering av ett jaktår om gangen med årlig evaluering og mulighet for revisjon basert på nye beite-, vekt- og overvåkingsdata. |
 
 ---
 
-## 📜 Lisens / Bruk
-Utviklet til undervisningsformål innen viltforvaltning, biologi og økologi.
+## 🛠️ Nøkkelfunksjoner og mekanikker
+
+* **Interaktivt landskapskart:** Viser Fjellvik med ulike soner (Nordlia, Sørskogen, Vassenden m.fl.), trekkruter og plassering av tiltak.
+* **Dynamisk avskytingsmodul:** Presis justering av kvoter fordelt på fire kategorier: *Kalv*, *Kolle*, *Spissbukk* og *Eldre bukk*.
+* **Forvaltningslogg og rapport:** Integrert notatblokk der spilleren underveis dokumenterer sine vurderinger og valg.
+* **Årlig simulering:** Viser hvordan bestandsstørrelse, kalvevekter, beiteskader og beitesituasjon utvikler seg som respons på valgt avskyting.
+* **Utskrift og eksport:** Generering av en samlet forvaltningsrapport for levering eller diskusjon i klassen.
+* **Lokal datalagring (`localStorage`):** Spillerens fremgang og notater lagres automatisk i nettleseren slik at økten kan avbrytes og fortsettes senere.
+
+---
+
+## 💻 Teknisk informasjon og kjøring
+
+Spillet er levert som en **enkeltstående, selvstendig HTML-fil (`index.html`)** med alt innebygd (HTML, CSS, JavaScript og bilder).
+
+* **Ingen krav til server eller databaser:** Kan åpnes direkte i enhver moderne nettleser (Chrome, Firefox, Edge, Safari).
+* **Universell utforming (A11y):** Tilrettelagt for skjermlesere, tastaturnavigasjon og oppfyller kontrastkrav.
+* **Kjøre lokalt:** Dobbelklikk på `index.html` eller åpne den i nettleseren.
+* **Publisering:** Kan publiseres direkte på en hvilken som helst statisk webserver eller bygges inn i Canvas / Itslearning / Web-nettsider via en `<iframe>`.
+
+---
+
+## 🏫 Anbefalt bruk i læringsstien
+
+1. **Før spillet (Intro):**
+   * Kort gjennomgang av sentrale begreper: Bæreevne, kjønns- og aldersstruktur, observasjonsindeks (*sett hjort*) og bestandsplaner.
+2. **Under spillet (Egenarbeid / Gruppearbeid):**
+   * Elevene arbeider seg gjennom oppdrag 1 til 4.
+   * Underveis skal de skrive begrunnelser i den integrerte forvaltningsloggen.
+3. **Etter spillet (Debatt og oppsummering):**
+   * Sammenlign spillernes femårige resultater: Hvem oppnådde stabil bestand, god kalvevekt og lave beiteskader?
+   * Diskusjon rundt dilemmatenkning i forvaltningen: Hvorfor er det krevende å gjøre alle interessegrupper fornøyde?
+
+---
+
+## 📜 Kredittering og opphavsrett
+
+* **Faglig konsept og utvikling:** Ronny Steen, Norges miljø- og biovitenskapelige universitet (NMBU).
+* **Kode- og spillasistanse:** Generert og tilpasset med ChatGPT (GPT-6 / Astra-modell).
+* **Foto:** Bjørn Aksel Bjerke.
+* **Versjon:** 3.2 (Fiktivt landskap og pedagogisk hjortemodell).
